@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://cachposdl3r3w"]
+[gd_scene load_steps=4 format=3 uid="uid://cachposdl3r3w"]
 
+[ext_resource type="Script" path="res://Player/player.gd" id="1_rifvl"]
 [ext_resource type="Texture2D" uid="uid://cry0nhlmcki4d" path="res://icon.svg" id="1_v2wag"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x0qht"]
 size = Vector2(126, 126)
 
 [node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_rifvl")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_v2wag")

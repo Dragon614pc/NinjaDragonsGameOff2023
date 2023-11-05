@@ -1,3 +1,12 @@
-[gd_scene format=3 uid="uid://d33cc7t2wq1mi"]
+[gd_scene load_steps=3 format=3 uid="uid://d33cc7t2wq1mi"]
+
+[ext_resource type="PackedScene" uid="uid://cachposdl3r3w" path="res://Player/player.tscn" id="1_e57sp"]
+[ext_resource type="PackedScene" uid="uid://pi085xf4abau" path="res://test/floor_test.tscn" id="2_53ose"]
 
 [node name="Node2D" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_e57sp")]
+position = Vector2(537, 159)
+
+[node name="FloorTest" parent="." instance=ExtResource("2_53ose")]
+position = Vector2(580, 635)

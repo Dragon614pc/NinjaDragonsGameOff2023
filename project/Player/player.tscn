@@ -1,10 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://cachposdl3r3w"]
+[gd_scene load_steps=5 format=3 uid="uid://cachposdl3r3w"]
 
 [ext_resource type="Script" path="res://Player/player.gd" id="1_rifvl"]
 [ext_resource type="Texture2D" uid="uid://cry0nhlmcki4d" path="res://icon.svg" id="1_v2wag"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x0qht"]
 size = Vector2(126, 126)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gqur4"]
+size = Vector2(91, 122)
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_rifvl")
@@ -14,3 +17,19 @@ texture = ExtResource("1_v2wag")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_x0qht")
+
+[node name="Sword" type="Area2D" parent="."]
+position = Vector2(101, 0)
+
+[node name="SwordShape" type="CollisionShape2D" parent="Sword"]
+position = Vector2(35.5, 0)
+shape = SubResource("RectangleShape2D_gqur4")
+disabled = true
+debug_color = Color(0, 0.6, 0.701961, 0.419608)
+
+[node name="SwordTimer" type="Timer" parent="Sword"]
+wait_time = 0.5
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="Sword/SwordTimer" to="." method="_on_sword_timer_timeout"]

@@ -1,0 +1,3 @@
+arrow keys- movement
+z - jump
+x- attack

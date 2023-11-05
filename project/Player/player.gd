@@ -11,9 +11,9 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 func _process(_delta):
 	if Input.is_action_just_pressed("Attack") and can_attack:
 		can_attack = false
-		$Sword/SwordShape.disabled = false
+		$Sword/SwordShape.disabled = false # enable attack hitbox
 		print("attack")
-		$Sword/SwordTimer.start()
+		$Sword/SwordTimer.start() # starts attack cooldown
 		
 func _physics_process(delta):
 	# Add the gravity.
@@ -35,7 +35,7 @@ func _physics_process(delta):
 	move_and_slide()
 
 
-func _on_sword_timer_timeout():
+func _on_sword_timer_timeout(): # when sword cooldown ends
 	$Sword/SwordShape.disabled = true
 	can_attack = true
 	

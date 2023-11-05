@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://pi085xf4abau"]
 
-[ext_resource type="Texture2D" uid="uid://cr1j6qhlf1xq2" path="res://splash.png" id="1_6whcn"]
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_3pk2v"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_idjlp"]
 size = Vector2(1152, 650)
@@ -8,7 +8,8 @@ size = Vector2(1152, 650)
 [node name="FloorTest" type="StaticBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_6whcn")
+scale = Vector2(1154, 650)
+texture = SubResource("PlaceholderTexture2D_3pk2v")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_idjlp")

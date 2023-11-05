@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://d33cc7t2wq1mi"]
+[gd_scene load_steps=4 format=3 uid="uid://d33cc7t2wq1mi"]
 
 [ext_resource type="PackedScene" uid="uid://cachposdl3r3w" path="res://Player/player.tscn" id="1_e57sp"]
 [ext_resource type="PackedScene" uid="uid://pi085xf4abau" path="res://test/floor_test.tscn" id="2_53ose"]
+[ext_resource type="PackedScene" uid="uid://b36f45rs7xbu8" path="res://test/dummy.tscn" id="3_p0vge"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -10,3 +11,6 @@ position = Vector2(537, 159)
 
 [node name="FloorTest" parent="." instance=ExtResource("2_53ose")]
 position = Vector2(580, 635)
+
+[node name="dummy" parent="." instance=ExtResource("3_p0vge")]
+position = Vector2(916, 248)

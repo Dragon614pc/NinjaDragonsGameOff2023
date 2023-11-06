@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-
+signal sword_hit
 const SPEED = 300.0
 const JUMP_VELOCITY = -500.0
 var can_attack = true
@@ -42,5 +42,8 @@ func _on_sword_timer_timeout(): # when sword cooldown ends
 
 
 func _on_sword_body_entered(body):
-	print("hit")
+	#print("hit")
+	sword_hit.emit()
 	
+
+

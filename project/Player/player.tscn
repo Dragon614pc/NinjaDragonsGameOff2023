@@ -19,10 +19,9 @@ texture = ExtResource("1_v2wag")
 shape = SubResource("RectangleShape2D_x0qht")
 
 [node name="Sword" type="Area2D" parent="."]
-position = Vector2(101, 0)
 
 [node name="SwordShape" type="CollisionShape2D" parent="Sword"]
-position = Vector2(35.5, -3.5)
+position = Vector2(119, -6)
 shape = SubResource("RectangleShape2D_gqur4")
 disabled = true
 debug_color = Color(0, 0.6, 0.701961, 0.419608)

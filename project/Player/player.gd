@@ -39,3 +39,8 @@ func _on_sword_timer_timeout(): # when sword cooldown ends
 	$Sword/SwordShape.disabled = true
 	can_attack = true
 	
+
+
+func _on_sword_body_entered(body):
+	print("hit")
+	

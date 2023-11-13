@@ -6,6 +6,7 @@
 size = Vector2(118, 120)
 
 [node name="dummy" type="StaticBody2D"]
+collision_layer = 2
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 modulate = Color(1, 0, 0, 1)

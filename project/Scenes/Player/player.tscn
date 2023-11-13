@@ -1,7 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://cachposdl3r3w"]
+[gd_scene load_steps=5 format=3 uid="uid://dr8e507swn27h"]
 
-[ext_resource type="Script" path="res://Player/player.gd" id="1_rifvl"]
-[ext_resource type="SpriteFrames" uid="uid://b3g3hcbdhx25v" path="res://Player/player.tres" id="2_lj71x"]
+[ext_resource type="Script" path="res://Scenes/Player/player.gd" id="1_qgfpe"]
+[ext_resource type="SpriteFrames" uid="uid://b3g3hcbdhx25v" path="res://Scenes/Player/player.tres" id="2_w0wtt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x0qht"]
 size = Vector2(126, 126)
@@ -10,11 +10,11 @@ size = Vector2(126, 126)
 size = Vector2(91, 115)
 
 [node name="Player" type="CharacterBody2D"]
-script = ExtResource("1_rifvl")
+script = ExtResource("1_qgfpe")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(3.9375, 3.9375)
-sprite_frames = ExtResource("2_lj71x")
+sprite_frames = ExtResource("2_w0wtt")
 animation = &"resting"
 frame_progress = 0.274795
 
@@ -22,6 +22,7 @@ frame_progress = 0.274795
 shape = SubResource("RectangleShape2D_x0qht")
 
 [node name="Sword" type="Area2D" parent="."]
+collision_mask = 7
 
 [node name="SwordShape" type="CollisionShape2D" parent="Sword"]
 position = Vector2(119, -6)

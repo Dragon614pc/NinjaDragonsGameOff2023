@@ -1,12 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://cy8ndupy70ttj"]
+[gd_scene load_steps=4 format=3 uid="uid://cy8ndupy70ttj"]
 
-[ext_resource type="Script" path="res://Scenes/test/dummy.gd" id="1_fkf3p"]
 [ext_resource type="PackedScene" uid="uid://pi085xf4abau" path="res://Scenes/test/floor_test.tscn" id="2_teah2"]
 [ext_resource type="PackedScene" uid="uid://dr8e507swn27h" path="res://Scenes/Player/player.tscn" id="3_omqpy"]
 [ext_resource type="PackedScene" uid="uid://b36f45rs7xbu8" path="res://Scenes/test/dummy.tscn" id="4_fmcfm"]
 
 [node name="test" type="Node2D"]
-script = ExtResource("1_fkf3p")
 
 [node name="FloorTest" parent="." instance=ExtResource("2_teah2")]
 position = Vector2(578, 640)
@@ -16,3 +14,5 @@ position = Vector2(422, 153)
 
 [node name="dummy" parent="." instance=ExtResource("4_fmcfm")]
 position = Vector2(829, 176)
+
+[connection signal="sword_hit" from="Player" to="dummy" method="_on_player_sword_hit"]

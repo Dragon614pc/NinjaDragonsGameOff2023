@@ -10,7 +10,7 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 func _ready():
 	$AnimatedSprite2D.play()
 func _process(_delta):
-	if Input.is_action_just_pressed("Attack") and can_attack:
+	if Input.is_action_just_pressed("X key") and can_attack:
 		can_attack = false
 		$Sword/SwordShape.disabled = false # enable attack hitbox
 		print("attack")
@@ -22,7 +22,7 @@ func _physics_process(delta):
 		velocity.y += gravity * delta
 	pass # Replace with function body.
 	# Handle Jump.
-	if Input.is_action_just_pressed("Jump") and is_on_floor():
+	if Input.is_action_just_pressed("Z key") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 
 	# Get the input direction and handle the movement/deceleration.

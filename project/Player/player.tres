@@ -1,0 +1,67 @@
+[gd_resource type="SpriteFrames" load_steps=10 format=3 uid="uid://b3g3hcbdhx25v"]
+
+[ext_resource type="Texture2D" uid="uid://bdnfoxunlg4ra" path="res://Assets/Ninja_Dragon_Resting.png" id="1_gibok"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hrtao"]
+atlas = ExtResource("1_gibok")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uijiv"]
+atlas = ExtResource("1_gibok")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_whtka"]
+atlas = ExtResource("1_gibok")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0lmwy"]
+atlas = ExtResource("1_gibok")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nlfw7"]
+atlas = ExtResource("1_gibok")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8trlx"]
+atlas = ExtResource("1_gibok")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0g4wo"]
+atlas = ExtResource("1_gibok")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rsm2l"]
+atlas = ExtResource("1_gibok")
+region = Rect2(32, 64, 32, 32)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hrtao")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uijiv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_whtka")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0lmwy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nlfw7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8trlx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0g4wo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rsm2l")
+}],
+"loop": true,
+"name": &"resting",
+"speed": 5.0
+}]

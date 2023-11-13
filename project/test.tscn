@@ -1,3 +1,27 @@
-[gd_scene format=3 uid="uid://d33cc7t2wq1mi"]
+[gd_scene load_steps=5 format=3 uid="uid://d33cc7t2wq1mi"]
+
+[ext_resource type="PackedScene" uid="uid://cachposdl3r3w" path="res://Player/player.tscn" id="1_e57sp"]
+[ext_resource type="PackedScene" uid="uid://pi085xf4abau" path="res://test/floor_test.tscn" id="2_53ose"]
+[ext_resource type="PackedScene" uid="uid://b36f45rs7xbu8" path="res://test/dummy.tscn" id="3_p0vge"]
+[ext_resource type="Script" path="res://test/dummy.gd" id="4_mf8ja"]
 
 [node name="Node2D" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_e57sp")]
+position = Vector2(537, 159)
+
+[node name="FloorTest" parent="." instance=ExtResource("2_53ose")]
+position = Vector2(580, 635)
+
+[node name="dummy" parent="." instance=ExtResource("3_p0vge")]
+position = Vector2(916, 248)
+script = ExtResource("4_mf8ja")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+position = Vector2(48, 14)
+polygon = PackedVector2Array(1215, 1187, 1814, 78, 1141, 1006, -75, 1060, -791, 84, -386, 1266)
+
+[connection signal="sword_hit" from="Player" to="dummy" method="_on_player_sword_hit"]
+[connection signal="body_entered" from="Area2D" to="Player" method="_on_area_2d_body_entered"]

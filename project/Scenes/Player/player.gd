@@ -51,5 +51,5 @@ func _on_sword_body_entered(body):
 
 
 
-func _on_area_2d_body_entered(_body):
+func _on_death_zone_entered(_body):
 	get_tree().reload_current_scene()

@@ -1,6 +1,6 @@
 [gd_resource type="SpriteFrames" load_steps=10 format=3 uid="uid://cctyekqgkkmhc"]
 
-[ext_resource type="Texture2D" uid="uid://bdnfoxunlg4ra" path="res://Assets/Ninja_Dragon_Resting.png" id="1_gibok"]
+[ext_resource type="Texture2D" uid="uid://bdnfoxunlg4ra" path="res://Assets/Sprites/Player/Ninja_Dragon_Resting.png" id="1_gibok"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hrtao"]
 atlas = ExtResource("1_gibok")
@@ -63,5 +63,5 @@ animations = [{
 }],
 "loop": true,
 "name": &"resting",
-"speed": 5.0
+"speed": 12.0
 }]

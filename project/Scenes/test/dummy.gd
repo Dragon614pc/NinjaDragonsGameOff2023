@@ -14,5 +14,10 @@ func _process(_delta):
 		
 
 func _on_player_sword_hit():
+	pass
+#	health -= 1
+#	print("hit \n{0} hitpoints left".format({"0":health}))
+
+func hit():
 	health -= 1
 	print("hit \n{0} hitpoints left".format({"0":health}))

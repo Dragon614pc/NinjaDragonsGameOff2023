@@ -17,9 +17,7 @@ script = ExtResource("1_qgfpe")
 position = Vector2(0, 0.499998)
 scale = Vector2(3.9375, 3.96875)
 sprite_frames = ExtResource("2_w0wtt")
-animation = &"resting"
-frame = 1
-frame_progress = 0.561688
+animation = &"resting new"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -5.5)

@@ -23,6 +23,9 @@ limit_bottom = 900
 [node name="dummy" parent="." instance=ExtResource("4_fmcfm")]
 position = Vector2(1655, 430)
 
+[node name="dummy2" parent="." instance=ExtResource("4_fmcfm")]
+position = Vector2(1057, 252)
+
 [node name="Area2D" type="Area2D" parent="."]
 collision_layer = 16
 

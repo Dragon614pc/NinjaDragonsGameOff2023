@@ -10,7 +10,7 @@ size = Vector2(126, 126)
 size = Vector2(91, 115)
 
 [node name="Player" type="CharacterBody2D"]
-collision_mask = 31
+collision_mask = 25
 script = ExtResource("1_qgfpe")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

@@ -43,9 +43,8 @@ func _on_sword_timer_timeout(): # when sword cooldown ends
 
 
 func _on_sword_body_entered(body):
-	if body == $"../dummy":
-	#print("hit")
-		sword_hit.emit()
+	
+	sword_hit.emit()
 	
 
 

@@ -11,7 +11,6 @@ size = Vector2(3631, 573)
 
 [node name="FloorTest" parent="." instance=ExtResource("2_teah2")]
 position = Vector2(578, 640)
-collision_layer = 8
 collision_mask = 15
 
 [node name="Player" parent="." instance=ExtResource("3_omqpy")]
@@ -19,9 +18,10 @@ position = Vector2(422, 153)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 limit_left = 0
+limit_bottom = 900
 
 [node name="dummy" parent="." instance=ExtResource("4_fmcfm")]
-position = Vector2(829, 176)
+position = Vector2(1655, 430)
 
 [node name="Area2D" type="Area2D" parent="."]
 collision_layer = 16
@@ -30,6 +30,12 @@ collision_layer = 16
 position = Vector2(630, 1252)
 shape = SubResource("RectangleShape2D_s5rml")
 debug_color = Color(0.996078, 0, 0, 0.419608)
+
+[node name="FloorTest2" parent="." instance=ExtResource("2_teah2")]
+position = Vector2(688, 730)
+
+[node name="FloorTest3" parent="." instance=ExtResource("2_teah2")]
+position = Vector2(1147, 810)
 
 [connection signal="sword_hit" from="Player" to="dummy" method="_on_player_sword_hit"]
 [connection signal="body_entered" from="Area2D" to="Player" method="_on_death_zone_entered"]

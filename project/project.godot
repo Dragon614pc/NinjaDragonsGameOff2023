@@ -22,6 +22,11 @@ boot_splash/minimum_display_time=2000
 
 project/assembly_name="Godot"
 
+[editor]
+
+version_control/plugin_name="GitPlugin"
+version_control/autoload_on_startup=true
+
 [input]
 
 Up={

@@ -21,7 +21,7 @@ limit_left = 0
 limit_bottom = 900
 
 [node name="dummy" parent="." instance=ExtResource("4_fmcfm")]
-position = Vector2(1655, 430)
+position = Vector2(1668, 420)
 
 [node name="dummy2" parent="." instance=ExtResource("4_fmcfm")]
 position = Vector2(1057, 252)

@@ -1,0 +1,34 @@
+[gd_scene load_steps=4 format=3 uid="uid://drmer142vqyok"]
+
+[ext_resource type="Script" path="res://Scenes/Menu/Play Button.gd" id="1_ae1cu"]
+[ext_resource type="Script" path="res://Scenes/Menu/Quit Button.gd" id="2_pqq1c"]
+[ext_resource type="PackedScene" uid="uid://cy8ndupy70ttj" path="res://Scenes/test/test.tscn" id="2_ynplr"]
+
+[node name="menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Play Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 456.0
+offset_top = 199.0
+offset_right = 656.0
+offset_bottom = 305.0
+text = "Play
+"
+script = ExtResource("1_ae1cu")
+level = ExtResource("2_ynplr")
+
+[node name="Quit Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 453.0
+offset_top = 321.0
+offset_right = 659.0
+offset_bottom = 424.0
+text = "Quit
+"
+script = ExtResource("2_pqq1c")
